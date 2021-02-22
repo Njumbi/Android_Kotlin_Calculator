@@ -124,6 +124,13 @@ class MainActivity : AppCompatActivity() {
             results.text = ""
             userInput.clear()
         }
+        clear.setOnClickListener {
+            input.text = ""
+        }
+        equal.setOnClickListener {
+            input.text = results.text
+            results.text = " "
+        }
     }
 
 
